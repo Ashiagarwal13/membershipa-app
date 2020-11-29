@@ -7,4 +7,14 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+
+
+  onSignIn(googleUser) {
+    let profile = googleUser.getBasicProfile();
+    console.log(profile.getName());    
+  }
+
+  clicked() {
+    alert("Pop up");
+  }
 }
